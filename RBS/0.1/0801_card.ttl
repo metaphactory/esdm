@@ -12,12 +12,22 @@
   dct:contributor "tutorialuser";
   dct:created "2025-08-01T04:32:22.122Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-01T04:32:31.804Z"^^xsd:dateTime;
+  dct:modified "2025-08-01T04:55:34.308Z"^^xsd:dateTime;
   dct:title "0801_Card"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace <https://ontologies.metaphacts.com/0801_card/>;
   rdfs:label "0801_Card"@en;
   owl:versionInfo "0.1" .
+
+:Card a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-01T04:55:34.308Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-01T04:55:34.308Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Card"@en;
+  rdfs:subClassOf :IssuedDevice .
 
 :IssuedDevice a owl:Class;
   <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
