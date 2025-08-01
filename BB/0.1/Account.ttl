@@ -1,0 +1,141 @@
+@prefix : <https://ontologies.metaphacts.com/account/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:0.3 a owl:Ontology;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-06-23T01:51:10.871Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-06-24T00:50:38.867Z"^^xsd:dateTime;
+  dct:title "Account"@en;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  vaem:namespace <https://ontologies.metaphacts.com/account/>;
+  rdfs:label "Account"@en;
+  owl:imports <https://ontologies.metaphacts.com/core-ontology/0.1>;
+  owl:priorVersion :0.1;
+  owl:versionInfo "0.3" .
+
+:3f1b0710-5dc8-40d0-9cc8-6a4f203736dd a sh:NodeShape;
+  sh:or ([
+        sh:class skos:Concept
+      ] [
+        sh:class :AccountSubStatus
+      ]);
+  sh:property [
+      sh:class skos:ConceptScheme;
+      sh:hasValue <https://vocabularies.metaphacts.com/account-sub-status/0.1>;
+      sh:path skos:inScheme
+    ] .
+
+:Account a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-06-23T02:01:17.450Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-06-23T02:05:25.522Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.3;
+  rdfs:label "Account"@en .
+
+:AccountShape a sh:NodeShape;
+  sh:property [
+      sh:node :3f1b0710-5dc8-40d0-9cc8-6a4f203736dd;
+      sh:path :hasAccountSubStatus
+    ], [
+      sh:datatype xsd:string;
+      sh:path :name
+    ], [
+      sh:node :a4c7e427-eb31-4600-a509-fae862255ae6;
+      sh:path :hasAccountStatus
+    ];
+  sh:targetClass :Account .
+
+:AccountStatus a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-06-23T01:57:32.008Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-06-24T00:38:55.123Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.3;
+  rdfs:label "Account Status"@en;
+  rdfs:subClassOf skos:Concept, <https://ontologies.metaphacts.com/core-ontology/Status> .
+
+:AccountSubStatus a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-06-23T01:57:32.008Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-06-24T00:50:38.867Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.3;
+  rdfs:label "Account Sub Status"@en;
+  rdfs:subClassOf skos:Concept, <https://ontologies.metaphacts.com/core-ontology/Status> .
+
+:AccountSubStatusShape a sh:NodeShape;
+  sh:property [
+      sh:node :a4c7e427-eb31-4600-a509-fae862255ae6;
+      sh:path :isApplicableIn
+    ];
+  sh:targetClass :AccountSubStatus .
+
+:a4c7e427-eb31-4600-a509-fae862255ae6 a sh:NodeShape;
+  sh:or ([
+        sh:class skos:Concept
+      ] [
+        sh:class :AccountStatus
+      ]);
+  sh:property [
+      sh:class skos:ConceptScheme;
+      sh:hasValue <https://vocabularies.metaphacts.com/account-status/0.1>;
+      sh:path skos:inScheme
+    ] .
+
+:hasAccountStatus a owl:ObjectProperty;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-06-23T02:01:17.450Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-06-23T02:01:17.450Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.3;
+  rdfs:label "has Account Status"@en .
+
+:hasAccountSubStatus a owl:ObjectProperty;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-06-23T02:01:17.450Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-06-23T02:01:17.450Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.3;
+  rdfs:label "has Account Sub Status"@en .
+
+:isApplicable a owl:ObjectProperty;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-06-24T00:50:38.867Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-06-24T00:50:38.867Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.3;
+  rdfs:label "Is Applicable"@en .
+
+:isApplicableIn a owl:ObjectProperty;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-06-24T00:50:38.867Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-06-24T00:50:38.867Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.3;
+  rdfs:label "is Applicable In"@en .
+
+:name a owl:DatatypeProperty;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-06-23T02:05:25.522Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-06-23T02:05:25.522Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.3;
+  rdfs:label "Name"@en .
