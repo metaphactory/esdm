@@ -14,7 +14,7 @@
   dct:creator "tutorialuser";
   dct:modified "2025-08-01T05:17:53.770Z"^^xsd:dateTime;
   dct:title "0801_Card"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
   vaem:namespace <https://ontologies.metaphacts.com/0801_card/>;
   rdfs:label "0801_Card"@en;
   owl:versionInfo "0.1" .
