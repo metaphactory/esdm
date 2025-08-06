@@ -1,0 +1,29 @@
+@prefix : <https://ontologies.metaphacts.com/ontology-bb/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:0.1 a owl:Ontology;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-06T02:06:55.062Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-06T02:07:05.722Z"^^xsd:dateTime;
+  dct:title "Ontology BB"@en;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  vaem:namespace <https://ontologies.metaphacts.com/ontology-bb/>;
+  rdfs:label "Ontology BB"@en;
+  owl:versionInfo "0.1" .
+
+:ClassA a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-06T02:07:05.722Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-06T02:07:05.722Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class A"@en .
