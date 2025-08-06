@@ -12,9 +12,18 @@
   dct:contributor "tutorialuser";
   dct:created "2025-08-06T02:08:18.149Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-06T02:08:18.149Z"^^xsd:dateTime;
+  dct:modified "2025-08-06T02:08:31.152Z"^^xsd:dateTime;
   dct:title "Ontology CC"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace <https://ontologies.metaphacts.com/ontology-cc/>;
   rdfs:label "Ontology CC"@en;
   owl:versionInfo "0.1" .
+
+:ClassA a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-06T02:08:31.152Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-06T02:08:31.152Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class A"@en .
