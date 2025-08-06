@@ -12,9 +12,28 @@
   dct:contributor "tutorialuser";
   dct:created "2025-08-06T01:48:14.533Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-06T01:48:14.533Z"^^xsd:dateTime;
+  dct:modified "2025-08-06T01:51:03.110Z"^^xsd:dateTime;
   dct:title "Ontology AA"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace <https://ontologies.metaphacts.com/ontology-aa/>;
   rdfs:label "Ontology AA"@en;
   owl:versionInfo "0.1" .
+
+:ClassA a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-06T01:51:03.110Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-06T01:51:03.110Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class A"@en .
+
+:ClassB a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-06T01:51:03.110Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-06T01:51:03.110Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class B"@en;
+  rdfs:subClassOf :ClassA .
