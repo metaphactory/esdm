@@ -27,7 +27,7 @@
   dct:creator "tutorialuser";
   dct:modified "2025-08-01T05:17:53.770Z"^^xsd:dateTime;
   rdfs:isDefinedBy :0.2;
-  rdfs:label "Card_2"@en;
+  rdfs:label "Card_3"@en;
   rdfs:subClassOf :IssuedDevice .
 
 :CardShape a sh:NodeShape;
