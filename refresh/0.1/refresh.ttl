@@ -12,9 +12,18 @@
   dct:contributor "tutorialuser";
   dct:created "2025-08-07T00:35:21.044Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-07T00:35:21.044Z"^^xsd:dateTime;
+  dct:modified "2025-08-07T00:35:35.147Z"^^xsd:dateTime;
   dct:title "Refresh"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace <https://ontologies.metaphacts.com/refresh/>;
   rdfs:label "Refresh"@en;
   owl:versionInfo "0.1" .
+
+:Refresh a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-07T00:35:35.147Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-07T00:35:35.147Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Refresh"@en .
