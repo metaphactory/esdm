@@ -12,7 +12,7 @@
   dct:contributor "jenny", "tutorialuser";
   dct:created "2025-08-08T04:53:58.749Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-08T04:58:30.771Z"^^xsd:dateTime;
+  dct:modified "2025-08-08T05:04:28.184Z"^^xsd:dateTime;
   dct:title "3RD 0808"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace <https://ontologies.metaphacts.com/3rd-0808/>;
@@ -37,3 +37,12 @@
   dct:modified "2025-08-08T04:58:30.771Z"^^xsd:dateTime;
   rdfs:isDefinedBy :0.2;
   rdfs:label "Class B"@en .
+
+:ClassD a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "jenny";
+  dct:contributor "jenny";
+  dct:created "2025-08-08T05:04:28.184Z"^^xsd:dateTime;
+  dct:creator "jenny";
+  dct:modified "2025-08-08T05:04:28.184Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.2;
+  rdfs:label "Class D"@en .
