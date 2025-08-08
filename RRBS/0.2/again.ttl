@@ -1,0 +1,30 @@
+@prefix : <https://ontologies.metaphacts.com/again-0808/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:0.2 a owl:Ontology;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-08T04:13:06.023Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-08T04:25:10.394Z"^^xsd:dateTime;
+  dct:title "Again 0808"@en;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  vaem:namespace <https://ontologies.metaphacts.com/again-0808/>;
+  rdfs:label "Again 0808"@en;
+  owl:priorVersion :0.1;
+  owl:versionInfo "0.2" .
+
+:ClassA a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-08T04:13:25.031Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-08T04:25:10.394Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.2;
+  rdfs:label "Class C"@en .
