@@ -46,12 +46,3 @@
   dct:modified "2025-08-12T02:01:14.909Z"^^xsd:dateTime;
   rdfs:isDefinedBy :0.4;
   rdfs:label "Class F"@en .
-
-:ClassE a owl:Class;
-  <http://open-services.net/ns/core#modifiedBy> "jenny";
-  dct:contributor "jenny";
-  dct:created "2025-08-12T01:46:48.133Z"^^xsd:dateTime;
-  dct:creator "jenny";
-  dct:modified "2025-08-12T01:46:48.133Z"^^xsd:dateTime;
-  rdfs:isDefinedBy :0.3;
-  rdfs:label "Class E"@en .
