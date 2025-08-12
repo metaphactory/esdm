@@ -1,0 +1,55 @@
+@prefix : <https://ontologies.metaphacts.com/0812-testing/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:0.1 a owl:Ontology;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-12T00:42:31.800Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-12T00:43:08.040Z"^^xsd:dateTime;
+  dct:title "0812 Testing"@en;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
+  vaem:namespace <https://ontologies.metaphacts.com/0812-testing/>;
+  rdfs:label "0812 Testing"@en;
+  owl:versionInfo "0.1" .
+
+:ClassA a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-12T00:42:47.181Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-12T00:43:08.040Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class A"@en .
+
+:ClassAShape a sh:NodeShape;
+  sh:property [
+      sh:datatype xsd:string;
+      sh:path :has
+    ];
+  sh:targetClass :ClassA .
+
+:ClassB a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-12T00:43:08.040Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-12T00:43:08.040Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class B"@en;
+  rdfs:subClassOf :ClassA .
+
+:has a owl:DatatypeProperty;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-12T00:43:08.040Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-12T00:43:08.040Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "has "@en .
