@@ -7,26 +7,27 @@
 @prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:0.1 a owl:Ontology;
+:0.2 a owl:Ontology;
   <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
   dct:contributor "tutorialuser";
   dct:created "2025-08-12T01:20:33.890Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-12T01:20:50.553Z"^^xsd:dateTime;
+  dct:modified "2025-08-12T01:34:02.684Z"^^xsd:dateTime;
   dct:title "MTC-02-4"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace <https://ontologies.metaphacts.com/mtc-02-4/>;
   rdfs:label "MTC-02-4"@en;
-  owl:versionInfo "0.1" .
+  owl:priorVersion :0.1;
+  owl:versionInfo "0.2" .
 
 :ClassA a owl:Class;
   <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
   dct:contributor "tutorialuser";
   dct:created "2025-08-12T01:20:50.553Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-12T01:20:50.553Z"^^xsd:dateTime;
-  rdfs:isDefinedBy :0.1;
-  rdfs:label "Class A"@en .
+  dct:modified "2025-08-12T01:34:02.684Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.2;
+  rdfs:label "Class AA"@en .
 
 :ClassB a owl:Class;
   <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
@@ -34,5 +35,30 @@
   dct:created "2025-08-12T01:20:50.553Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
   dct:modified "2025-08-12T01:20:50.553Z"^^xsd:dateTime;
-  rdfs:isDefinedBy :0.1;
+  rdfs:isDefinedBy :0.2;
   rdfs:label "Class B"@en .
+
+:ClassC a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-12T01:32:07.537Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-12T01:33:28.559Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.2;
+  rdfs:label "Class D"@en .
+
+:ClassCShape a sh:NodeShape;
+  sh:property [
+      sh:datatype xsd:string;
+      sh:path :hasANumber
+    ];
+  sh:targetClass :ClassC .
+
+:hasANumber a owl:DatatypeProperty;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-12T01:32:47.509Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-12T01:32:47.509Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.2;
+  rdfs:label "has a number"@en .
