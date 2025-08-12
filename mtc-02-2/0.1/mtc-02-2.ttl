@@ -12,9 +12,9 @@
   dct:contributor "tutorialuser";
   dct:created "2025-08-12T00:55:18.624Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-12T00:55:42.219Z"^^xsd:dateTime;
+  dct:modified "2025-08-12T01:07:39.890Z"^^xsd:dateTime;
   dct:title "MTC-02-2"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
   vaem:namespace <https://ontologies.metaphacts.com/mtc-02-2/>;
   rdfs:label "MTC-02-2"@en;
   owl:versionInfo "0.1" .
@@ -36,3 +36,12 @@
   dct:modified "2025-08-12T00:55:42.219Z"^^xsd:dateTime;
   rdfs:isDefinedBy :0.1;
   rdfs:label "Class B"@en .
+
+:ClassCccc a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-12T01:07:39.890Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-12T01:07:39.890Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class CCCC"@en .
