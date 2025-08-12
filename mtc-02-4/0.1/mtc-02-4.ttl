@@ -7,17 +7,18 @@
 @prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:0.1 a owl:Ontology;
-  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
-  dct:contributor "tutorialuser";
+:0.4 a owl:Ontology;
+  <http://open-services.net/ns/core#modifiedBy> "zoha";
+  dct:contributor "tutorialuser", "zoha";
   dct:created "2025-08-12T01:20:33.890Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-12T01:20:50.553Z"^^xsd:dateTime;
+  dct:modified "2025-08-12T02:01:14.909Z"^^xsd:dateTime;
   dct:title "MTC-02-4"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace <https://ontologies.metaphacts.com/mtc-02-4/>;
   rdfs:label "MTC-02-4"@en;
-  owl:versionInfo "0.1" .
+  owl:priorVersion :0.1;
+  owl:versionInfo "0.4" .
 
 :ClassA a owl:Class;
   <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
@@ -25,7 +26,7 @@
   dct:created "2025-08-12T01:20:50.553Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
   dct:modified "2025-08-12T01:20:50.553Z"^^xsd:dateTime;
-  rdfs:isDefinedBy :0.1;
+  rdfs:isDefinedBy :0.4;
   rdfs:label "Class A"@en .
 
 :ClassB a owl:Class;
@@ -34,5 +35,14 @@
   dct:created "2025-08-12T01:20:50.553Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
   dct:modified "2025-08-12T01:20:50.553Z"^^xsd:dateTime;
-  rdfs:isDefinedBy :0.1;
+  rdfs:isDefinedBy :0.4;
   rdfs:label "Class B"@en .
+
+:ClassF a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "zoha";
+  dct:contributor "zoha";
+  dct:created "2025-08-12T02:01:14.909Z"^^xsd:dateTime;
+  dct:creator "zoha";
+  dct:modified "2025-08-12T02:01:14.909Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.4;
+  rdfs:label "Class F"@en .
