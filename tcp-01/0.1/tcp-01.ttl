@@ -12,9 +12,27 @@
   dct:contributor "tutorialuser";
   dct:created "2025-08-13T00:55:05.846Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-13T00:55:05.846Z"^^xsd:dateTime;
+  dct:modified "2025-08-13T00:55:57.295Z"^^xsd:dateTime;
   dct:title "TCP-01"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
   vaem:namespace <https://ontologies.metaphacts.com/tcp-01/>;
   rdfs:label "TCP-01"@en;
   owl:versionInfo "0.1" .
+
+:ClassA a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-13T00:55:57.295Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-13T00:55:57.295Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class A"@en .
+
+:ClassB a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-13T00:55:57.295Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-13T00:55:57.295Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class B"@en .
