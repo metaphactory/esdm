@@ -1,0 +1,40 @@
+@prefix : <https://ontologies.metaphacts.com/tcp-01/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:0.2 a owl:Ontology;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-13T00:55:05.846Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-13T01:07:17.236Z"^^xsd:dateTime;
+  dct:title "TCP-01"@en;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
+  vaem:namespace <https://ontologies.metaphacts.com/tcp-01/>;
+  rdfs:label "TCP-01"@en;
+  owl:priorVersion :0.1;
+  owl:versionInfo "0.2" .
+
+:ClassA a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-13T00:55:57.295Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-13T01:07:17.236Z"^^xsd:dateTime;
+  rdfs:comment "Added annotation"@en;
+  rdfs:isDefinedBy :0.2;
+  rdfs:label "Class A"@en .
+
+:ClassB a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-13T00:55:57.295Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-13T00:55:57.295Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.2;
+  rdfs:label "Class B"@en .
