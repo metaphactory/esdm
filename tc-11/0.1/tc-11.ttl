@@ -7,32 +7,34 @@
 @prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:0.1 a owl:Ontology;
+:0.2 a owl:Ontology;
   <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
   dct:contributor "tutorialuser";
   dct:created "2025-08-14T01:02:34.210Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-14T01:02:49.957Z"^^xsd:dateTime;
+  dct:modified "2025-08-14T01:10:32.013Z"^^xsd:dateTime;
   dct:title "TC-11"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace <https://ontologies.metaphacts.com/tc-11/>;
   rdfs:label "TC-11"@en;
-  owl:versionInfo "0.1" .
+  owl:priorVersion :0.1;
+  owl:versionInfo "0.2" .
 
 :ClassA a owl:Class;
   <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
   dct:contributor "tutorialuser";
   dct:created "2025-08-14T01:02:49.957Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-14T01:02:49.957Z"^^xsd:dateTime;
-  rdfs:isDefinedBy :0.1;
-  rdfs:label "Class A"@en .
+  dct:modified "2025-08-14T01:10:32.013Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.2;
+  rdfs:label "Class C"@en .
 
 :ClassB a owl:Class;
   <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
   dct:contributor "tutorialuser";
   dct:created "2025-08-14T01:02:49.957Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-14T01:02:49.957Z"^^xsd:dateTime;
-  rdfs:isDefinedBy :0.1;
-  rdfs:label "Class B"@en .
+  dct:modified "2025-08-14T01:10:32.013Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.2;
+  rdfs:label "Class B"@en;
+  rdfs:subClassOf :ClassA .
