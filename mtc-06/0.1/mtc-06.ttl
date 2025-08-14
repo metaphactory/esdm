@@ -12,9 +12,27 @@
   dct:contributor "tutorialuser";
   dct:created "2025-08-14T01:39:47.912Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-14T01:39:47.912Z"^^xsd:dateTime;
+  dct:modified "2025-08-14T01:40:01.853Z"^^xsd:dateTime;
   dct:title "MTC-06"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
   vaem:namespace <https://ontologies.metaphacts.com/mtc-06/>;
   rdfs:label "MTC-06"@en;
   owl:versionInfo "0.1" .
+
+:ClassA a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-14T01:40:01.853Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-14T01:40:01.853Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class A"@en .
+
+:ClassB a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-14T01:40:01.853Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-14T01:40:01.853Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class B"@en .
