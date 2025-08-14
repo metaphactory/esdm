@@ -12,7 +12,7 @@
   dct:contributor "tutorialuser";
   dct:created "2025-08-14T01:39:47.912Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-14T01:42:16.846Z"^^xsd:dateTime;
+  dct:modified "2025-08-14T02:25:27.656Z"^^xsd:dateTime;
   dct:title "MTC-06"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace <https://ontologies.metaphacts.com/mtc-06/>;
@@ -25,8 +25,9 @@
   dct:contributor "tutorialuser";
   dct:created "2025-08-14T01:40:01.853Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-14T01:40:01.853Z"^^xsd:dateTime;
-  rdfs:isDefinedBy :0.3;
+  dct:modified "2025-08-14T02:25:27.656Z"^^xsd:dateTime;
+  rdfs:comment "Hello World"@en;
+  rdfs:isDefinedBy :0.5;
   rdfs:label "Class A"@en .
 
 :ClassB a owl:Class;
@@ -35,7 +36,7 @@
   dct:created "2025-08-14T01:40:01.853Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
   dct:modified "2025-08-14T01:45:41.207Z"^^xsd:dateTime;
-  rdfs:isDefinedBy :0.3;
+  rdfs:isDefinedBy :0.5;
   rdfs:label "Class B"@en;
   rdfs:subClassOf :ClassD .
 
@@ -45,5 +46,5 @@
   dct:created "2025-08-14T01:45:41.207Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
   dct:modified "2025-08-14T01:45:41.207Z"^^xsd:dateTime;
-  rdfs:isDefinedBy :0.3;
+  rdfs:isDefinedBy :0.5;
   rdfs:label "Class D"@en .
