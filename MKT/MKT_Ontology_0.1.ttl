@@ -12,9 +12,43 @@
   dct:contributor "jenny";
   dct:created "2025-08-20T04:33:46.624Z"^^xsd:dateTime;
   dct:creator "jenny";
-  dct:modified "2025-08-20T04:33:46.624Z"^^xsd:dateTime;
+  dct:modified "2025-08-20T04:34:54.477Z"^^xsd:dateTime;
   dct:title "MKT_Ontology_Jenny"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace <https://ontologies.metaphacts.com/mkt_ontology_jenny/>;
   rdfs:label "MKT_Ontology_Jenny"@en;
   owl:versionInfo "0.1" .
+
+:ClassJenny a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "jenny";
+  dct:contributor "jenny";
+  dct:created "2025-08-20T04:34:54.477Z"^^xsd:dateTime;
+  dct:creator "jenny";
+  dct:modified "2025-08-20T04:34:54.477Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class Jenny"@en .
+
+:ClassJennyShape a sh:NodeShape;
+  sh:property [
+      sh:class :ClassKina;
+      sh:path :worksWith
+    ];
+  sh:targetClass :ClassJenny .
+
+:ClassKina a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "jenny";
+  dct:contributor "jenny";
+  dct:created "2025-08-20T04:34:54.477Z"^^xsd:dateTime;
+  dct:creator "jenny";
+  dct:modified "2025-08-20T04:34:54.477Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class Kina"@en .
+
+:worksWith a owl:ObjectProperty;
+  <http://open-services.net/ns/core#modifiedBy> "jenny";
+  dct:contributor "jenny";
+  dct:created "2025-08-20T04:34:54.477Z"^^xsd:dateTime;
+  dct:creator "jenny";
+  dct:modified "2025-08-20T04:34:54.477Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Works_With"@en .
