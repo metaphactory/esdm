@@ -8,11 +8,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :0.3 a owl:Ontology;
-  <http://open-services.net/ns/core#modifiedBy> "zoha&jenny";
-  dct:contributor "zoha&jenny";
+  <http://open-services.net/ns/core#modifiedBy> "kina";
+  dct:contributor "kina", "zoha&jenny";
   dct:created "2025-08-20T04:33:46.624Z"^^xsd:dateTime;
   dct:creator "zoha&jenny";
-  dct:modified "2025-08-20T04:34:54.477Z"^^xsd:dateTime;
+  dct:modified "2025-08-21T02:53:30.655Z"^^xsd:dateTime;
   dct:title "MKT_Ontology"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace <https://ontologies.metaphacts.com/mkt_ontology/>;
@@ -21,11 +21,12 @@
   owl:versionInfo "0.3" .
 
 :ClassJenny a owl:Class;
-  <http://open-services.net/ns/core#modifiedBy> "jenny";
-  dct:contributor "jenny";
+  <http://open-services.net/ns/core#modifiedBy> "kina";
+  dct:contributor "jenny", "kina";
   dct:created "2025-08-20T04:34:54.477Z"^^xsd:dateTime;
   dct:creator "jenny";
-  dct:modified "2025-08-20T04:34:54.477Z"^^xsd:dateTime;
+  dct:modified "2025-08-21T02:53:30.655Z"^^xsd:dateTime;
+  rdfs:comment "Jenny reports to Robin."@en;
   rdfs:isDefinedBy :0.3;
   rdfs:label "Class Jenny"@en .
 
@@ -33,6 +34,9 @@
   sh:property [
       sh:class :ClassKina;
       sh:path :worksWith
+    ], [
+      sh:class :ClassRobin;
+      sh:path :reportsTo
     ];
   sh:targetClass :ClassJenny .
 
@@ -45,12 +49,22 @@
   rdfs:isDefinedBy :0.3;
   rdfs:label "Class Kina"@en .
 
+:ClassRobin a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "kina";
+  dct:contributor "kina";
+  dct:created "2025-08-21T02:53:30.655Z"^^xsd:dateTime;
+  dct:creator "kina";
+  dct:modified "2025-08-21T02:53:30.655Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.3;
+  rdfs:label "Class Robin"@en .
+
 :ClassZoha a owl:Class;
-  <http://open-services.net/ns/core#modifiedBy> "zoha";
-  dct:contributor "zoha";
+  <http://open-services.net/ns/core#modifiedBy> "kina";
+  dct:contributor "kina", "zoha";
   dct:created "2025-08-20T04:20:56.348Z"^^xsd:dateTime;
   dct:creator "zoha";
-  dct:modified "2025-08-20T04:20:56.348Z"^^xsd:dateTime;
+  dct:modified "2025-08-21T02:53:30.655Z"^^xsd:dateTime;
+  rdfs:comment "Zoha reports to Robin."@en;
   rdfs:isDefinedBy :0.3;
   rdfs:label "Class Zoha"@en .
 
@@ -58,8 +72,20 @@
   sh:property [
       sh:class :ClassJenny;
       sh:path :worksWith
+    ], [
+      sh:class :ClassRobin;
+      sh:path :reportsTo
     ];
   sh:targetClass :ClassZoha .
+
+:reportsTo a owl:ObjectProperty;
+  <http://open-services.net/ns/core#modifiedBy> "kina";
+  dct:contributor "kina";
+  dct:created "2025-08-21T02:53:30.655Z"^^xsd:dateTime;
+  dct:creator "kina";
+  dct:modified "2025-08-21T02:53:30.655Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.3;
+  rdfs:label "Reports_To"@en .
 
 :worksWith a owl:ObjectProperty;
   <http://open-services.net/ns/core#modifiedBy> "jenny", "zoha";
