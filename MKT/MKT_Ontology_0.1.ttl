@@ -15,7 +15,7 @@
   dct:creator "zoha&jenny";
   dct:modified "2025-08-20T04:34:54.477Z"^^xsd:dateTime;
   dct:title "MKT_Ontology"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
   vaem:namespace <https://ontologies.metaphacts.com/mkt_ontology/>;
   rdfs:label "MKT_Ontology"@en;
   owl:versionInfo "0.1" .
