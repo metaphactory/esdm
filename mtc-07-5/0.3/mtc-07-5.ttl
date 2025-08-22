@@ -12,7 +12,7 @@
   dct:contributor "jenny";
   dct:created "2025-08-22T00:21:35.920Z"^^xsd:dateTime;
   dct:creator "jenny";
-  dct:modified "2025-08-22T00:32:37.212Z"^^xsd:dateTime;
+  dct:modified "2025-08-22T00:49:27.939Z"^^xsd:dateTime;
   dct:title "MTC-07-5"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace <https://ontologies.metaphacts.com/mtc-07-5/>;
@@ -36,3 +36,21 @@
   dct:modified "2025-08-22T00:32:37.212Z"^^xsd:dateTime;
   rdfs:isDefinedBy :0.1;
   rdfs:label "class B"@en .
+
+:ClassC a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "jenny";
+  dct:contributor "jenny";
+  dct:created "2025-08-22T00:34:07.521Z"^^xsd:dateTime;
+  dct:creator "jenny";
+  dct:modified "2025-08-22T00:34:07.521Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "class c"@en .
+
+:ClassD a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "jenny";
+  dct:contributor "jenny";
+  dct:created "2025-08-22T00:49:27.939Z"^^xsd:dateTime;
+  dct:creator "jenny";
+  dct:modified "2025-08-22T00:49:27.939Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class D"@en .
