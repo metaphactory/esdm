@@ -1,0 +1,56 @@
+@prefix : <https://ontologies.metaphacts.com/mtc-07-5/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:0.1 a owl:Ontology;
+  <http://open-services.net/ns/core#modifiedBy> "jenny";
+  dct:contributor "jenny";
+  dct:created "2025-08-22T00:21:35.920Z"^^xsd:dateTime;
+  dct:creator "jenny";
+  dct:modified "2025-08-22T00:49:27.939Z"^^xsd:dateTime;
+  dct:title "MTC-07-5"@en;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  vaem:namespace <https://ontologies.metaphacts.com/mtc-07-5/>;
+  rdfs:label "MTC-07-5"@en;
+  owl:versionInfo "0.1" .
+
+:ClassA a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "jenny";
+  dct:contributor "jenny";
+  dct:created "2025-08-22T00:22:02.774Z"^^xsd:dateTime;
+  dct:creator "jenny";
+  dct:modified "2025-08-22T00:22:02.774Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "class A"@en .
+
+:ClassB a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "jenny";
+  dct:contributor "jenny";
+  dct:created "2025-08-22T00:32:37.212Z"^^xsd:dateTime;
+  dct:creator "jenny";
+  dct:modified "2025-08-22T00:32:37.212Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "class B"@en .
+
+:ClassC a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "jenny";
+  dct:contributor "jenny";
+  dct:created "2025-08-22T00:34:07.521Z"^^xsd:dateTime;
+  dct:creator "jenny";
+  dct:modified "2025-08-22T00:34:07.521Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "class c"@en .
+
+:ClassD a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "jenny";
+  dct:contributor "jenny";
+  dct:created "2025-08-22T00:49:27.939Z"^^xsd:dateTime;
+  dct:creator "jenny";
+  dct:modified "2025-08-22T00:49:27.939Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class D"@en .

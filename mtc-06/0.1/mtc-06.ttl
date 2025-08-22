@@ -7,25 +7,27 @@
 @prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:0.1 a owl:Ontology;
+:0.4 a owl:Ontology;
   <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
   dct:contributor "tutorialuser";
   dct:created "2025-08-14T01:39:47.912Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-14T01:40:01.853Z"^^xsd:dateTime;
+  dct:modified "2025-08-14T01:42:16.846Z"^^xsd:dateTime;
   dct:title "MTC-06"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace <https://ontologies.metaphacts.com/mtc-06/>;
   rdfs:label "MTC-06"@en;
-  owl:versionInfo "0.1" .
+  owl:priorVersion :0.1;
+  owl:versionInfo "0.4" .
 
 :ClassA a owl:Class;
   <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
   dct:contributor "tutorialuser";
   dct:created "2025-08-14T01:40:01.853Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
+
   dct:modified "2025-08-14T01:40:01.853Z"^^xsd:dateTime;
-  rdfs:isDefinedBy :0.1;
+  rdfs:isDefinedBy :0.3;
   rdfs:label "Class A"@en .
 
 :ClassB a owl:Class;
@@ -33,6 +35,17 @@
   dct:contributor "tutorialuser";
   dct:created "2025-08-14T01:40:01.853Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-14T01:40:01.853Z"^^xsd:dateTime;
-  rdfs:isDefinedBy :0.1;
-  rdfs:label "Class B"@en .
+
+  dct:modified "2025-08-14T01:45:41.207Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.3;
+  rdfs:label "Class B"@en;
+  rdfs:subClassOf :ClassD .
+
+:ClassD a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-08-14T01:45:41.207Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-08-14T01:45:41.207Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.3;
+  rdfs:label "Class D"@en .
