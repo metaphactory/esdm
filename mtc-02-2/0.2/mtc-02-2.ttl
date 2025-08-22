@@ -8,11 +8,11 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :0.2 a owl:Ontology;
-  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
-  dct:contributor "tutorialuser";
+  <http://open-services.net/ns/core#modifiedBy> "jenny";
+  dct:contributor "jenny", "tutorialuser";
   dct:created "2025-08-12T00:55:18.624Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-08-12T01:07:39.890Z"^^xsd:dateTime;
+  dct:modified "2025-08-22T04:15:34.552Z"^^xsd:dateTime;
   dct:title "MTC-02-2"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace <https://ontologies.metaphacts.com/mtc-02-2/>;
@@ -46,3 +46,12 @@
   dct:modified "2025-08-12T01:07:39.890Z"^^xsd:dateTime;
   rdfs:isDefinedBy :0.2;
   rdfs:label "Class CCCC"@en .
+
+:ClassD a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "jenny";
+  dct:contributor "jenny";
+  dct:created "2025-08-22T04:15:34.552Z"^^xsd:dateTime;
+  dct:creator "jenny";
+  dct:modified "2025-08-22T04:15:34.552Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.2;
+  rdfs:label "class D"@en .
