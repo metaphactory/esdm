@@ -12,9 +12,18 @@
   dct:contributor "jenny";
   dct:created "2025-08-25T01:51:41.421Z"^^xsd:dateTime;
   dct:creator "jenny";
-  dct:modified "2025-08-25T01:51:41.421Z"^^xsd:dateTime;
+  dct:modified "2025-08-25T01:58:49.684Z"^^xsd:dateTime;
   dct:title "MTC-08"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace <https://ontologies.metaphacts.com/mtc-08/>;
   rdfs:label "MTC-08"@en;
   owl:versionInfo "0.1" .
+
+:ClassA a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "jenny";
+  dct:contributor "jenny";
+  dct:created "2025-08-25T01:58:49.684Z"^^xsd:dateTime;
+  dct:creator "jenny";
+  dct:modified "2025-08-25T01:58:49.684Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Class A"@en .
