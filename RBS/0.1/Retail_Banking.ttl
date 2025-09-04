@@ -1,0 +1,25 @@
+@prefix : <https://ontologies.metaphacts.com/retail-banking/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:0.1 a owl:Ontology;
+  <http://open-services.net/ns/core#modifiedBy> "nazerra";
+  dct:contributor "nazerra", "tutorialuser";
+  dct:created "2025-08-29T03:50:07.622Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-09-04T03:10:16.397Z"^^xsd:dateTime;
+  dct:title "Retail Banking"@en;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  vaem:namespace <https://ontologies.metaphacts.com/retail-banking/>;
+  rdfs:label "Retail Banking"@en;
+  owl:imports <https://ontologies.metaphacts.com/consumer-finance/0.1>, <https://ontologies.metaphacts.com/home-buying/0.1>;
+  owl:versionInfo "0.1" .
+
+:HomeClass <http://open-services.net/ns/core#modifiedBy> "nazerra";
+  dct:contributor "nazerra";
+  dct:modified "2025-09-04T03:09:52.838Z"^^xsd:dateTime .
