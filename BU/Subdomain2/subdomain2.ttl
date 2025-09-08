@@ -1,0 +1,54 @@
+@prefix : <https://ontologies.metaphacts.com/bu/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ClassC1 a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-09-04T07:17:15.228Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-09-04T07:17:15.228Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://ontologies.metaphacts.com/subdomain-2/0.1>;
+  rdfs:label "class c1"@en .
+
+:ClassC1Shape a sh:NodeShape;
+  sh:property [
+      sh:class :ClassD1;
+      sh:path :cd12
+    ];
+  sh:targetClass :ClassC1 .
+
+:ClassD1 a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-09-04T07:17:15.228Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-09-04T07:17:15.228Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://ontologies.metaphacts.com/subdomain-2/0.1>;
+  rdfs:label "class d1"@en .
+
+:cd12 a owl:ObjectProperty;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-09-04T07:17:15.228Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-09-04T07:17:15.228Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://ontologies.metaphacts.com/subdomain-2/0.1>;
+  rdfs:label "cd12"@en .
+
+<https://ontologies.metaphacts.com/subdomain-2/0.1> a owl:Ontology;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-09-04T07:15:23.254Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-09-04T07:17:15.228Z"^^xsd:dateTime;
+  dct:title "subdomain 2"@en;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
+  vaem:namespace <https://ontologies.metaphacts.com/bu/>;
+  rdfs:label "subdomain 2"@en;
+  owl:versionInfo "0.1" .
