@@ -1,0 +1,55 @@
+@prefix : <https://ontologies.metaphacts.com/bu/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ClassB1 a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "nazerra";
+  dct:contributor "nazerra";
+  dct:created "2025-09-09T01:28:38.460Z"^^xsd:dateTime;
+  dct:creator "nazerra";
+  dct:modified "2025-09-09T02:05:04.526Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://ontologies.metaphacts.com/subdomain3/0.2>;
+  rdfs:label "Class B1"@en .
+
+:ClassB1Shape a sh:NodeShape;
+  sh:property [
+      sh:class :ClassB2;
+      sh:path :b12
+    ];
+  sh:targetClass :ClassB1 .
+
+:ClassB2 a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "nazerra";
+  dct:contributor "nazerra";
+  dct:created "2025-09-09T01:28:38.460Z"^^xsd:dateTime;
+  dct:creator "nazerra";
+  dct:modified "2025-09-09T01:28:38.460Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://ontologies.metaphacts.com/subdomain3/0.2>;
+  rdfs:label "Class B2"@en .
+
+:b12 a owl:ObjectProperty;
+  <http://open-services.net/ns/core#modifiedBy> "nazerra";
+  dct:contributor "nazerra";
+  dct:created "2025-09-09T02:05:04.526Z"^^xsd:dateTime;
+  dct:creator "nazerra";
+  dct:modified "2025-09-09T02:05:04.526Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://ontologies.metaphacts.com/subdomain3/0.2>;
+  rdfs:label "B12"@en .
+
+<https://ontologies.metaphacts.com/subdomain3/0.2> a owl:Ontology;
+  <http://open-services.net/ns/core#modifiedBy> "nazerra";
+  dct:contributor "nazerra";
+  dct:created "2025-09-09T01:25:54.869Z"^^xsd:dateTime;
+  dct:creator "nazerra";
+  dct:modified "2025-09-09T02:05:04.526Z"^^xsd:dateTime;
+  dct:title "subdomain3"@en;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
+  vaem:namespace <https://ontologies.metaphacts.com/bu/>;
+  rdfs:label "subdomain3"@en;
+  owl:priorVersion <https://ontologies.metaphacts.com/subdomain3/0.1>;
+  owl:versionInfo "0.2" .
