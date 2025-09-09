@@ -12,43 +12,64 @@
   dct:contributor "tutorialuser";
   dct:created "2025-09-04T07:17:15.228Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-09-04T07:17:15.228Z"^^xsd:dateTime;
+  dct:modified "2025-09-09T01:00:12.954Z"^^xsd:dateTime;
   rdfs:isDefinedBy <https://ontologies.metaphacts.com/subdomain-2/0.1>;
-  rdfs:label "class c1"@en .
+  rdfs:label "class B1"@en .
 
 :ClassC1Shape a sh:NodeShape;
   sh:property [
+      sh:class :ClassC2;
+      sh:path :b12
+    ], [
       sh:class :ClassD1;
-      sh:path :cd12
+      sh:path :b13
     ];
   sh:targetClass :ClassC1 .
+
+:ClassC2 a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-09-08T23:34:50.669Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-09-09T01:00:12.954Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://ontologies.metaphacts.com/subdomain-2/0.1>;
+  rdfs:label "class B2"@en .
 
 :ClassD1 a owl:Class;
   <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
   dct:contributor "tutorialuser";
   dct:created "2025-09-04T07:17:15.228Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-09-04T07:17:15.228Z"^^xsd:dateTime;
+  dct:modified "2025-09-09T01:00:12.954Z"^^xsd:dateTime;
   rdfs:isDefinedBy <https://ontologies.metaphacts.com/subdomain-2/0.1>;
-  rdfs:label "class d1"@en .
+  rdfs:label "class B3"@en .
 
-:cd12 a owl:ObjectProperty;
+:b12 a owl:ObjectProperty;
   <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
   dct:contributor "tutorialuser";
-  dct:created "2025-09-04T07:17:15.228Z"^^xsd:dateTime;
+  dct:created "2025-09-09T01:00:12.954Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-09-04T07:17:15.228Z"^^xsd:dateTime;
+  dct:modified "2025-09-09T01:00:12.954Z"^^xsd:dateTime;
   rdfs:isDefinedBy <https://ontologies.metaphacts.com/subdomain-2/0.1>;
-  rdfs:label "cd12"@en .
+  rdfs:label "B12"@en .
+
+:b13 a owl:ObjectProperty;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-09-09T01:00:12.954Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-09-09T01:00:12.954Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://ontologies.metaphacts.com/subdomain-2/0.1>;
+  rdfs:label "B13"@en .
 
 <https://ontologies.metaphacts.com/subdomain-2/0.1> a owl:Ontology;
   <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
   dct:contributor "tutorialuser";
   dct:created "2025-09-04T07:15:23.254Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-09-04T07:17:15.228Z"^^xsd:dateTime;
+  dct:modified "2025-09-09T01:00:39.614Z"^^xsd:dateTime;
   dct:title "subdomain 2"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace <https://ontologies.metaphacts.com/bu/>;
   rdfs:label "subdomain 2"@en;
   owl:versionInfo "0.1" .
