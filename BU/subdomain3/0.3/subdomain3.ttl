@@ -48,7 +48,7 @@
   dct:creator "nazerra";
   dct:modified "2025-09-09T02:05:04.526Z"^^xsd:dateTime;
   dct:title "subdomain3"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
   vaem:namespace <https://ontologies.metaphacts.com/bu/>;
   rdfs:label "subdomain3"@en;
   owl:priorVersion <https://ontologies.metaphacts.com/subdomain3/0.2>;
