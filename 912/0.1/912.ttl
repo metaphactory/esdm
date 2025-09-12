@@ -4,7 +4,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :0.1 a owl:Ontology;
@@ -12,10 +11,10 @@
   dct:contributor "tutorialuser";
   dct:created "2025-09-12T05:07:21.588Z"^^xsd:dateTime;
   dct:creator "tutorialuser";
-  dct:modified "2025-09-12T05:07:33.953Z"^^xsd:dateTime;
+  dct:modified "2025-09-12T05:11:54.759Z"^^xsd:dateTime;
   dct:title "912"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
-  vaem:namespace <https://ontologies.metaphacts.com/912/>;
+  <http://www.linkedmodel.org/1.2/schema/vaem#namespace> <https://ontologies.metaphacts.com/912/>;
   rdfs:label "912"@en;
   owl:versionInfo "0.1" .
 
@@ -27,3 +26,13 @@
   dct:modified "2025-09-12T05:07:33.953Z"^^xsd:dateTime;
   rdfs:isDefinedBy :0.1;
   rdfs:label "Class"@en .
+
+:Subclass a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "tutorialuser";
+  dct:contributor "tutorialuser";
+  dct:created "2025-09-12T05:11:54.759Z"^^xsd:dateTime;
+  dct:creator "tutorialuser";
+  dct:modified "2025-09-12T05:11:54.759Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Subclass"@en;
+  rdfs:subClassOf :Class .
